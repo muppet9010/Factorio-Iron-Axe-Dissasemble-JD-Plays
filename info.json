@@ -1,0 +1,11 @@
+{
+    "name": "Iron_Axe_Dissasemble_JD_Plays",
+    "version": "0.1.0",
+    "title": "Iron Axe Dissasemble JD-Plays",
+    "author": "Muppet9010",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "0.16",
+    "dependencies": ["base >= 0.16"],
+    "description": "Recipe to disassemble an Iron Axe"
+}
