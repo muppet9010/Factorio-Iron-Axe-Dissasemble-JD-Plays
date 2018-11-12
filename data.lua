@@ -1,32 +1,19 @@
 require("constants")
 
 data:extend({
-	--[[
-	NOT USED AS THE GRAPHICS CAN'T WORK IN THE GUI
 	{
 		type = "mining-tool",
 		name = "basic-mining-tool",
 		localised_description = {"item-description.basic-mining-tool"},
-		icon = "__core__/graphics/game-stopped-visualization.png",
+		icon = graphicsModName .. "/graphics/icons/basic-mining-tool.png",
 		icon_size = 32,
 		flags = {"goes-to-main-inventory"},
-		action = {
-			type = "direct",
-			action_delivery = {
-				type = "instant",
-				target_effects = {
-					type = "damage",
-					damage = { amount = 5 , type = "physical"}
-				}
-			}
-		},
 		durability = 9007199254740992,
 		subgroup = "tool",
 		order = "a[mining]-a[iron-axe]1",
 		speed = 2.5,
 		stack_size = 20
 	},
-	]]
 	{
 		type = "item",
 		name = "iron-axe-handle",
@@ -65,7 +52,7 @@ data:extend({
 		localised_description = {"item-description.basic-mining-tool-recipe"},
 		ingredients = {{"iron-axe", 1}},
 		results = {
-			--{type = "item", name = "basic-mining-tool", amount = 1},
+			{type = "item", name = "basic-mining-tool", amount = 1},
 			{type = "item", name = "iron-axe-handle", amount = 1},
 			{type = "item", name = "iron-axe-head", amount = 1}
 		},
