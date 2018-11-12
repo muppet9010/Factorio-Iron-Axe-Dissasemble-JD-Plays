@@ -3,7 +3,7 @@ ItemCrafted = function(event)
 	local player = game.players[event.player_index]
 	local basicMiningTool = player.get_inventory(defines.inventory.player_tools).find_item_stack("basic-mining-tool")
 	if basicMiningTool ~= nil then
-		basicMiningTool.durability = 1
+		basicMiningTool.durability = 1000000
 	end
 end
 
